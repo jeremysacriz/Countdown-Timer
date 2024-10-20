@@ -1,0 +1,178 @@
+.phils-container {
+   background-image: url('/public/img/phils.jpg');
+   background-position: 0 20%;
+}
+
+.japan-container {
+   background-image: url('/public/img/japan24.jpg');
+   background-position: center;
+}
+
+.her-container {
+   background-image: url('/public/img/Fave\ cousin.jpg')
+}
+
+.main-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-size: cover;
+    position: relative;
+ 
+    &::after {
+       content: '';
+       position: absolute;
+       top: 0;
+       left: 0;
+       height: 100%;
+       width: 100%;
+       background-color: rgba(0, 0, 0, 0.4);
+    }
+ 
+    .countdown {
+       height: auto;
+       width: 60%;
+       margin: 100px 0;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       z-index: 2;
+ 
+       .time {
+          width: 250px;
+ 
+          .days,
+          .hours,
+          .minutes,
+          .seconds {
+             text-align: center;
+    
+             h1 {
+                position: relative;
+                top: 20px;
+                font-size: 8rem;
+                font-weight: 100;
+                letter-spacing: 20px;
+                color: white;
+             }
+    
+             h2 {
+                position: relative;
+                top: 40px;
+                font-size: 1.6rem;
+                letter-spacing: 8px;
+                text-transform: uppercase;
+                color: white;
+             }
+          }
+       }
+ 
+       span {
+          font-size: 8rem;
+          margin: 0 20px;
+          color: white;
+       }
+    }
+
+    #countryBtn {
+      height: 10vh;
+      width: 100%;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2;
+
+      .btn {
+         display: flex;
+         align-items: center;
+         position: relative;
+         cursor: pointer;
+         text-decoration: none;
+         margin: 0 20px;
+         padding: 20px 50px;
+         border: 3px solid white;
+         color: white;
+
+         &:hover {
+            .country-link {
+               color: white;
+            }
+         }
+
+         &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: 0.4s ease;
+            z-index: -2;
+         }
+
+         &:hover {
+            &::before {
+               opacity: 1;
+            }
+         }
+      }
+
+      .phils-btn {
+         &::before {
+            background: linear-gradient(to right, rgb(0, 56, 168), rgb(206,17,38), rgb(252,209,22),);
+         }
+
+         &:hover {
+            .country-link {
+               color: white;
+            }
+         }
+      }
+
+      .japan-btn {
+         &::before {
+            background: 
+            linear-gradient(to right, black 1px, transparent 1px 299px, black 299px),
+            linear-gradient(to right, black 1px, transparent 1px 299px, black 299px),
+            linear-gradient(to bottom, black 1px, transparent 1px 199px, black 199px 200px, transparent 200px 210px, black 210px 211px, transparent 211px 409px, black 409px),
+            radial-gradient(circle, red 25%, white calc(25% + 1px)),
+            linear-gradient(to right, blue 33%, white 33% 66%, red 66%);
+         }
+
+         &:hover {
+            .country-link {
+               color: transparent;
+            }
+         }
+      }
+
+      .her-btn {
+         transition: 0.4s ease;
+         
+         &:hover {
+            background-color: white;
+            transition: 0.4s ease;
+
+            .country-link {
+               color: black;
+            }
+         }
+      }
+
+      .country-link {
+         font-size: 1.6rem;
+         font-weight: 100;
+         letter-spacing: 4px;
+         color: white;
+         text-transform: uppercase;
+         text-decoration: none;
+         transition: color 0.4s ease;
+         z-index: 1;
+      }
+    }
+ }

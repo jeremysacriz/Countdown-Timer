@@ -1,0 +1,42 @@
+#header {
+    position: absolute;
+    top: 0;
+    height: auto;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+
+    .header-container {
+        height: 100%;
+        width: 90%;
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .header-logo-img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        .header-btns {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            h1 {
+                padding: 0 40px;
+                font-size: 2rem;
+                font-weight: 500;
+                text-transform: uppercase;
+                letter-spacing: 4px;
+                color: white;
+
+                &:last-of-type {
+                    padding-right: 0px;
+                }
+            }
+        }
+    }
+}
