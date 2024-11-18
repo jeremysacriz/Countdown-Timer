@@ -9,7 +9,7 @@ export const Countdown = ({date, country}) => {
   
     let interval = useRef();
   
-    const phils24Timer = () => {
+    const countdownTimer = () => {
        const countdownDate = new Date(date).getTime()
   
        interval = setInterval(() => {
@@ -33,7 +33,7 @@ export const Countdown = ({date, country}) => {
     }
   
     useEffect(() => {
-      phils24Timer()
+        countdownTimer()
        let currentInterval = interval.current
        
        return () => {
