@@ -1,6 +1,6 @@
-import { Header } from './Header';
-import { Countdown } from './Countdown';
-import { CountryBtns } from './CountryBtns';
+import { Header } from './Header/Header';
+import { Countdown } from './Countdown/Countdown';
+import { CountryBtns } from './Countdown/CountryBtns';
 
 export {
     Header,
