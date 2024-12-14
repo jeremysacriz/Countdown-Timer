@@ -4,13 +4,13 @@ import { Header, Countdown } from './components';
 
 const Phils = () => {
   return (
-      <Countdown date='December 21, 2024 06:00:00' country='phils-container' />
+      <Countdown date='December 21, 2024 19:30:00' country='phils-container' />
   )
 }
 
 const Japan = () => {
   return (
-      <Countdown date='December 26, 2024 06:00:00' country='japan-container' />
+      <Countdown date='December 26, 2024 18:00:00' country='japan-container' />
   )
 }
 
