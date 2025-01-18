@@ -4,7 +4,7 @@ export const CountryBtns = () => {
   return (
     <section id="countryBtn">
       <Link to="/" className="btn phils-btn">
-        <h1 className="country-link">Philippines</h1>
+        <h1 className="country-link">Australia</h1>
       </Link>
       <Link to="/japan" className="btn japan-btn">
         <h1 className="country-link">Japan</h1>

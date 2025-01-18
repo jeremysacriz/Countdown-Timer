@@ -15,9 +15,9 @@ body {
   height: 100vh;
   width: 100vw;
 }
-#app .phils-container {
-  background-image: url("/public/img/phils.jpg");
-  background-position: 0 20%;
+#app .aus-container {
+  background-image: url("/public/img/Fave cousin.jpg");
+  background-position: 0 50%;
 }
 #app .japan-container {
   background-image: url("/public/img/japan24.jpg");

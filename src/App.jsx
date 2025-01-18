@@ -2,15 +2,15 @@ import './css/index.css';
 import { Routes, Route } from 'react-router-dom';
 import { Header, Countdown } from './components';
 
-const Phils = () => {
+const Aus = () => {
   return (
-      <Countdown date='December 21, 2024 19:30:00' country='phils-container' />
+      <Countdown date='April 1, 2025 10:30:00' country='aus-container' />
   )
 }
 
 const Japan = () => {
   return (
-      <Countdown date='December 26, 2024 18:00:00' country='japan-container' />
+      <Countdown date='August 30, 2025 6:00:00' country='japan-container' />
   )
 }
 
@@ -25,7 +25,7 @@ export const App = () => {
     <section id="app">
       <Header />
       <Routes>
-        <Route path="/" element={<Phils />}></Route>
+        <Route path="/" element={<Aus />}></Route>
         <Route path="/japan" element={<Japan />}></Route>
         {/* <Route path="/her" element={<Her />}></Route> */}
       </Routes>
